@@ -3578,7 +3578,7 @@ focus_tree = {
 		id = TUR_ww1_continue_modernization
 		available = {
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_CHI_planned_economy
 		completion_reward = {
 			random_owned_state = {
 				add_building_construction = {
@@ -3600,9 +3600,10 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 43
+		x = 41
 		y = 0
 	}
+	##########################################Industry - Etatism####################################################################
 	focus = {
 		id = TUR_ww1_etatism
 		relative_position_id = TUR_ww1_continue_modernization
@@ -3611,7 +3612,10 @@ focus_tree = {
 		}
 		available = {
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		mutually_exclusive = {
+		    focus = TUR_ww1_trade_focused_policy
+		}
+		icon = GFX_focus_SOV_merge_plants
 		completion_reward = {
 			random_owned_state = {
 				add_building_construction = {
@@ -3627,7 +3631,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			#nlock_decision_tooltip = 
+			swap_ideas = {
+			    remove_idea = Lacking_Industry
+				add_idea = Lacking_Industry_1
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3644,7 +3651,7 @@ focus_tree = {
 		}
 		available = {
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_SOV_funds_for_the_cause_ccp_2d_sov_compatibility
 		completion_reward = {
 			random_owned_state = {
 				add_building_construction = {
@@ -3672,7 +3679,7 @@ focus_tree = {
 		    controls_state = 49
 			controls_state = 343
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_road_investment
 		completion_reward = {
 			49 = {
 				add_building_construction = {
@@ -3707,7 +3714,7 @@ focus_tree = {
 			controls_state = 677
 			controls_state = 680
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_road_investment
 		completion_reward = {
 			676 = {
 				add_building_construction = {
@@ -3749,7 +3756,7 @@ focus_tree = {
 			controls_state = 756
 			controls_state = 757
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_road_investment
 		completion_reward = {
 			341 = {
 				add_building_construction = {
@@ -3791,7 +3798,7 @@ focus_tree = {
 			controls_state = 353
 			controls_state = 352
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_road_investment
 		completion_reward = {
 			354 = {
 				add_building_construction = {
@@ -3832,7 +3839,7 @@ focus_tree = {
 		    controls_state = 49
 			controls_state = 343
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_CHI_registry_of_property
 		completion_reward = {
 			random_owned_state = {
 				add_building_construction = {
@@ -3868,7 +3875,7 @@ focus_tree = {
 			controls_state = 344
 			controls_state = 554
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
 		completion_reward = {
 		    add_popularity = {
 			    ideology = communism
@@ -3912,10 +3919,15 @@ focus_tree = {
 		available = {
 		    has_country_flag = OPDA_dissolved
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_PER_national_bank
 		completion_reward = {
 		    custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = Ziraat_bank
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+			    remove_idea = Lacking_Industry_1
+				add_idea = Lacking_Industry_2
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3931,11 +3943,14 @@ focus_tree = {
 		prerequisite = {
 		    focus = TUR_ww1_continue_modernization
 		}
+		mutually_exclusive = {
+		    focus = TUR_ww1_etatism
+		}
 		available = {
 		    controls_state = 49
 			controls_state = 343
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_goal_generic_positive_trade_relations
 		completion_reward = {
 			49 = {
 				add_building_construction = {
@@ -3969,9 +3984,12 @@ focus_tree = {
 		    controls_state = 49
 			controls_state = 343
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_industry_investment
 		completion_reward = {
-			unlock_decision_tooltip = Foreign_investment
+		    swap_ideas = {
+			    remove_idea = Lacking_Industry
+				add_idea = Lacking_Industry_1
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3999,7 +4017,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_chi_reach_out_to_france
 		completion_reward = {
 			553 = {
 			    add_extra_state_shared_building_slots = 1
@@ -4043,7 +4061,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_chi_british_cooperation
 		completion_reward = {
 			291 = {
 			    add_extra_state_shared_building_slots = 1
@@ -4062,9 +4080,76 @@ focus_tree = {
 		y = 4
 	}
 	focus = {
+		id = TUR_ww1_oil_for_debts
+		relative_position_id = TUR_ww1_continue_modernization
+		prerequisite = {
+		    focus = TUR_ww1_british_investment
+		}
+		available = {
+		    controls_state = 291
+			controls_state = 676
+			NOT = {
+			    has_war_with = ENG
+			}
+			NOT = {
+			    has_country_flag = OPDA_dissolved
+			}
+			ENG = {
+			    has_opinion = {
+				    target = ROOT
+					value > 44
+				}
+			}
+			custom_trigger_tooltip =  {
+			    tooltip = OPDA_idea
+				OR = {
+			        has_idea = TUR_ottoman_public_debt_administration_1_ns
+			    	has_idea = TUR_ottoman_public_debt_administration_ns
+			    }
+			}
+		}
+		icon = GFX_focus_generic_british_trade
+		completion_reward = {
+			give_resource_rights = {
+			    state = 676
+				receiver = ENG
+			}
+			give_resource_rights = {
+			    state = 291
+				receiver = ENG
+			}
+			if = {
+			    limit = {
+				    has_idea = TUR_ottoman_public_debt_administration_ns
+				}
+				swap_ideas = {
+				    remove_idea = TUR_ottoman_public_debt_administration_ns
+					add_idea = TUR_ottoman_public_debt_administration_1_ns
+				}
+				else_if = {
+				    limit = {
+					    has_idea = TUR_ottoman_public_debt_administration_1_ns
+					}
+					swap_ideas = {
+					    remove_idea = TUR_ottoman_public_debt_administration_1_ns
+						add_idea = TUR_ottoman_public_debt_administration_2_ns
+					}
+				}
+				else = {
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 3
+		y = 6
+	}
+	focus = {
 		id = TUR_ww1_invite_ford
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_american_investments
 		prerequisite = {
 		    focus = TUR_ww1_british_investment
 		}
@@ -4096,6 +4181,10 @@ focus_tree = {
 		    		instant_build = yes
 		    	}
 		    }
+			swap_ideas = {
+			    remove_idea = Lacking_Industry_1
+				add_idea = Lacking_Industry_3
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -4123,7 +4212,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_ger_revive_kaiserreich
 		completion_reward = {
 			341 = {
 			    add_extra_state_shared_building_slots = 1
@@ -4169,7 +4258,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_befriend_italy
 		completion_reward = {
 			448 = {
 			    add_extra_state_shared_building_slots = 1
@@ -4211,7 +4300,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_austrian_railway
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = {
 		    focus = TUR_ww1_italian_investment
 		}
@@ -4253,7 +4342,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_factory_construction
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
 		    focus = TUR_ww1_continue_modernization
 		}
@@ -4282,12 +4371,12 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 1
+		y = 2
 	}
 	focus = {
 		id = TUR_ww1_mining_effort
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = {
 		    focus = TUR_ww1_factory_construction
 		}
@@ -4328,12 +4417,12 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 2
+		y = 3
 	}
 	focus = {
 		id = TUR_ww1_petroleum_effort
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = {
 		    focus = TUR_ww1_mining_effort
 		}
@@ -4374,7 +4463,7 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 3
+		y = 4
 	}
 	focus = {
 		id = TUR_ww1_berlin_baghdad_railway
@@ -4396,7 +4485,123 @@ focus_tree = {
 		}
 		cost = 10
 		x = 0
-		y = 3
+		y = 5
+	}
+	focus = {
+		id = TUR_ww1_improve_hejaz_railway
+		relative_position_id = TUR_ww1_continue_modernization
+		icon = GFX_focus_generic_railroad
+		prerequisite = {
+		    focus = TUR_ww1_berlin_baghdad_railway
+		}
+		available = {
+			controls_state = 454
+			controls_state = 455
+			679 = {
+			    OR = {
+				    is_controlled_by = ROOT
+				    controller =  {
+					    is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+		    build_railway = {
+				path = { 4206 13920 7176 13287 4115 1210 13276 1033 13273 2095 8092 2033 13265 13263 13261 12883 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 1
+		y = 6
+	}
+	focus = {
+		id = TUR_ww1_connect_railways
+		relative_position_id = TUR_ww1_continue_modernization
+		icon = GFX_SOV_improve_railway_network_ccp_2d_sov_compatibility
+		prerequisite = {
+		    focus = TUR_ww1_berlin_baghdad_railway
+		}
+		available = {
+			controls_state = 454
+			controls_state = 553
+			controls_state = 677
+			controls_state = 344
+			controls_state = 747
+			controls_state = 293
+			controls_state = 347
+			controls_state = 356
+			679 = {
+			    OR = {
+				    is_controlled_by = ROOT
+				    controller =  {
+					    is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+		    build_railway = {
+				path = { 1086 7107 1065 11919 792 1108 10087 1088 12029 806 11746 }
+			}
+			build_railway = {
+				path = { 10840 1920 8073 13249 1923 13255 12883 }
+			}
+			build_railway = {
+				path = { 904 11866 11883 979 3982 3967 6995 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = -1
+		y = 6
+	}
+	focus = {
+		id = TUR_ww1_modern_economy
+		relative_position_id = TUR_ww1_continue_modernization
+		icon = GFX_focus_generic_economic_recovery
+		prerequisite = {
+		    focus = TUR_ww1_berlin_baghdad_railway
+		}
+		prerequisite = {
+		    focus = TUR_ww1_new_bank
+			focus = TUR_ww1_invite_ford
+		}
+		prerequisite = {
+		    focus = TUR_ww1_construct_roads4
+			focus = TUR_ww1_austrian_railway
+		}
+		available = {
+			num_of_civilian_factories > 49
+			controls_state = 341
+			owns_state = 341
+		}
+		completion_reward = {
+		    if = {
+			    limit = {
+				    has_idea = Lacking_Industry_2
+				}
+				remove_ideas = {
+				   Lacking_Industry_2
+				}
+				else = {
+				    remove_ideas = {
+				       Lacking_Industry_3
+				    }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		x = 0
+		y = 7
 	}
 	#####################################SEVR ANLAŞMASI##########################################################
 	

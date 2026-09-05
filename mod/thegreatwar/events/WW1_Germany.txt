@@ -660,6 +660,9 @@ country_event = {
 		add_ideas = {
 		    GER_BB_railway_ns
 		}
+		TUR = {
+			country_event = { id = ww1_germany.34 hours = 6 }
+		}
 	}
 
 	option = {
@@ -668,7 +671,7 @@ country_event = {
 			factor = 0
 		}
 		TUR = {
-			country_event = { id = ww1_germany.35 hours = 6 }
+			country_event = { id = ww1_germany.36 hours = 6 }
 		}
 	}
 }
@@ -691,7 +694,7 @@ country_event = {
 		}
 		hidden_effect = {
 		    ENG = {
-			    country_event = { id = ww1_germany.36 hours = 72 }
+			    country_event = { id = ww1_germany.35 hours = 72 }
 			}
 		}
 	}
@@ -717,27 +720,7 @@ country_event = {
 	}
 }
 
-# Berlin Baghdad Railway Line Rejcetion "To Ottomans"
-country_event = {
-	id = ww1_germany.35
-	title = ww1_germany.35.t
-	desc = ww1_germany.35.d
-	picture = COUNTRY_hoi4tgw_report_austria_hungary
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = ww1_germany.35.a
-		ai_chance = {
-			factor = 100
-		}
-		add_political_power = -50
-	}
-}
-
-# Berlin Baghdad Railway Line British Refusal "To Britain"
+# Berlin Baghdad Railway Line Britain Noticed The Railway "To Britain"
 country_event = {
 	id = ww1_germany.36
 	title = ww1_germany.36.t
@@ -753,6 +736,78 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = -50
+		add_war_support = 0.05
+		GER = {
+			country_event = { id = ww1_germany.37 hours = 48 }
+		}
+		hidden_effect = {
+		    news_event = {
+			    id = kis_news.124
+				hours = 8
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_germany.36.a
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -25
+		add_war_support = -0.03
+	}
+}
+
+# Berlin Baghdad Railway Line Britain Threatens With War "To Germany"
+country_event = {
+	id = ww1_germany.37
+	title = ww1_germany.37.t
+	desc = ww1_germany.37.d
+	picture = COUNTRY_hoi4tgw_report_austria_hungary
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.37.a
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = 0.05
+		TUR = {
+			country_event = { id = ww1_germany.38 hours = 48 }
+		}
+		hidden_effect = {
+		    ENG = {
+			    declare_war_on = {
+				    type = annex_everything
+				    target = GER
+			    }
+				declare_war_on = {
+				    type = annex_everything
+				    target = TUR
+			    }
+			}
+			GER = {
+			    add_to_faction = TUR
+			}
+		    news_event = {
+			    id = kis_news.125
+				hours = 8
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_germany.37.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -25
+		add_war_support = -0.03
+		remove_ideas = {
+		    GER_BB_railway_ns
+		}
 	}
 }
