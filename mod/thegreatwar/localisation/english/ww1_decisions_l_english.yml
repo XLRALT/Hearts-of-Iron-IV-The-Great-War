@@ -68,6 +68,7 @@
  TUR_ask_germany_for_loan_forgivness: "Ask Germany to Cancel Their Debts"
  TUR_illegally_dissolve_the_opda: "Illegaly Dissolve the Ottoman Public Debt Administration"
  TUR_paying_debt_cflg: "Paying Debt"
+ OPDA_dissolved_cflg: "OPDA Dissolved"
 
 ### Foreign Affairs Mechanic ###
  foreign_affairs: "Foreign Affairs"

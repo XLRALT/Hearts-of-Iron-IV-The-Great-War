@@ -3600,7 +3600,7 @@ focus_tree = {
 			factor = 10
 		}
 		cost = 10
-		x = 41
+		x = 40
 		y = 0
 	}
 	##########################################Industry - Etatism####################################################################
@@ -3917,7 +3917,7 @@ focus_tree = {
 		    focus = TUR_ww1_small_scale_nationalization
 		}
 		available = {
-		    has_country_flag = OPDA_dissolved
+		    has_country_flag = OPDA_dissolved_cflg
 		}
 		icon = GFX_focus_PER_national_bank
 		completion_reward = {
@@ -4092,7 +4092,7 @@ focus_tree = {
 			    has_war_with = ENG
 			}
 			NOT = {
-			    has_country_flag = OPDA_dissolved
+			    has_country_flag = OPDA_dissolved_cflg
 			}
 			ENG = {
 			    has_opinion = {
@@ -4101,7 +4101,7 @@ focus_tree = {
 				}
 			}
 			custom_trigger_tooltip =  {
-			    tooltip = OPDA_idea
+			    tooltip = OPDA_idea_tt
 				OR = {
 			        has_idea = TUR_ottoman_public_debt_administration_1_ns
 			    	has_idea = TUR_ottoman_public_debt_administration_ns
@@ -4468,7 +4468,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_berlin_baghdad_railway
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_railroad
 		prerequisite = {
 		    focus = TUR_ww1_petroleum_effort
 		}
@@ -4490,7 +4490,7 @@ focus_tree = {
 	focus = {
 		id = TUR_ww1_improve_hejaz_railway
 		relative_position_id = TUR_ww1_continue_modernization
-		icon = GFX_focus_generic_railroad
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 		    focus = TUR_ww1_berlin_baghdad_railway
 		}

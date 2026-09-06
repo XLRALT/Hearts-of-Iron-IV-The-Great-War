@@ -749,7 +749,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.36.a
+		name = ww1_germany.36.b
 		ai_chance = {
 			factor = 0
 		}
@@ -775,9 +775,6 @@ country_event = {
 			factor = 0
 		}
 		add_war_support = 0.05
-		TUR = {
-			country_event = { id = ww1_germany.38 hours = 48 }
-		}
 		hidden_effect = {
 		    ENG = {
 			    declare_war_on = {
@@ -792,15 +789,11 @@ country_event = {
 			GER = {
 			    add_to_faction = TUR
 			}
-		    news_event = {
-			    id = kis_news.125
-				hours = 8
-			}
 		}
 	}
 	
 	option = {
-		name = ww1_germany.37.a
+		name = ww1_germany.37.b
 		ai_chance = {
 			factor = 100
 		}
@@ -808,6 +801,29 @@ country_event = {
 		add_war_support = -0.03
 		remove_ideas = {
 		    GER_BB_railway_ns
+		}
+		TUR = {
+			country_event = { id = ww1_germany.38 hours = 6 }
+		} 
+	}
+}
+
+# Berlin Baghdad Railway Line Germany Drops Out "To Ottomans"
+country_event = {
+	id = ww1_germany.38
+	title = ww1_germany.38.t
+	desc = ww1_germany.38.d
+	picture = COUNTRY_hoi4tgw_report_austria_hungary
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.38.a
+		add_political_power = -50
+		ai_chance = {
+			factor = 100
 		}
 	}
 }

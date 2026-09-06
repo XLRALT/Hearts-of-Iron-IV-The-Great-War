@@ -661,7 +661,7 @@ news_event = {
 	id = kis_news.124
 	title = kis_news.124.t
 	desc = kis_news.124.d
-	picture = EVENT_hoi4tgw_xinhai_end
+	picture = GFX_news_event_secure_the_wayward_ally
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -669,23 +669,5 @@ news_event = {
 
 	option = {
 		name = kis_news.124.a
-	}
-}
-
-#____________________________________________________________
-# Berlin Baghdad Railway Causes The Great War!
-#____________________________________________________________
-news_event = {
-	id = kis_news.125
-	title = kis_news.125.t
-	desc = kis_news.125.d
-	picture = EVENT_hoi4tgw_xinhai_end
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	major = yes
-
-	option = {
-		name = kis_news.125.a
 	}
 }

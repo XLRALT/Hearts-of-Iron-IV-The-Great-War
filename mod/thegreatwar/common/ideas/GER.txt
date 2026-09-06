@@ -600,7 +600,7 @@ ideas = {
 				has_government = fascism
 			}
 
-			picture = generic_fascism_rising
+			picture = generic_build_infrastructure
 
 			removal_cost = -1
 
