@@ -14,7 +14,7 @@ TUR_the_opda = {
 			NOT = {
 				has_country_flag = TUR_paying_debt_cflg
 			}
-			has_completed_focus = TUR_ww1_pay_debts
+			has_completed_focus = TUR_ww1_continue_modernization
 		}
 		
 		days_remove = 30
@@ -371,4 +371,59 @@ TUR_the_opda = {
 			set_country_flag = OPDA_dissolved_cflg
 		}
 	}	
+}
+
+TUR_BB_railway = {
+    TUR_railway_construction_timer = {
+
+		icon = generic_break_treaty
+		
+		priority = 1
+
+		allowed = { 
+		    OR = {
+			    original_tag = TUR
+			    original_tag = GER
+			}
+		}
+
+        days_mission_timeout = 240
+		is_good = no
+		
+		activation = {
+		    has_global_flag = BB_railway_accepted_gflg
+			NOT = {
+			    has_global_flag = BB_railway_canceled_gflg
+			}
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		    always = no
+		}
+
+		ai_will_do = {
+		}
+
+		visible = {
+			has_global_flag = BB_railway_accepted_gflg
+			NOT = {
+			    has_global_flag = BB_railway_canceled_cflg
+			}
+		}
+		
+		cancel_trigger = {
+			has_global_flag = BB_railway_canceled_gflg
+		}
+
+		timeout_effect = {
+			build_railway = {
+				path = { 11746 806 3889 12473 }
+			}
+			build_railway = {
+				path = { 1549 10804 10106 1600 3795 12046 2097 }
+			}
+		}
+	}
 }

@@ -69,6 +69,8 @@
  TUR_illegally_dissolve_the_opda: "Illegaly Dissolve the Ottoman Public Debt Administration"
  TUR_paying_debt_cflg: "Paying Debt"
  OPDA_dissolved_cflg: "OPDA Dissolved"
+ TUR_BB_railway: "Berlin Baghdad Railway Line"
+ TUR_railway_construction_timer: "Construction of the Berlin Baghdad Railway"
 
 ### Foreign Affairs Mechanic ###
  foreign_affairs: "Foreign Affairs"

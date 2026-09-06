@@ -286,7 +286,7 @@
  ww1_germany.37.a: "We are not going to give away this easy!"
  ww1_germany.37.a: "We cannot afford a war..."
  ww1_germany.38.t: "Germany stops their effort for Berlin Baghdad Railway"
- ww1_germany.38.d: "Germans backstabbed us!They promised us to help in the building the Berlin Baghdad Railway but now they said because of British demands they dropped their help.While we know the possiblity of a British anger,we forgot the possiblity of a war between them.Because we relied on German funds for the project now we dont have any power to continue it.It is a shame how this beautiful project have to scrapped because of them...
+ ww1_germany.38.d: "Germans backstabbed us!They promised us to help in the building the Berlin Baghdad Railway but now they said because of British demands they dropped their help.While we know the possiblity of a British anger,we forgot the possiblity of a war between them.Because we relied on German funds for the project now we dont have any power to continue it.It is a shame how this beautiful project have to scrapped because of them..."
  ww1_germany.38.a: "There is not much we can do."
  # GREECE
  ww1_greece.1.a: "Constantine I is now King!"
@@ -1774,5 +1774,5 @@
  ww1_ottoman.30.a: "A few rebellions can be disregarded."
  #Berlin Baghdad Railway Crisis
  kis_news.124.t: "Berlin Baghdad Railway Crisis"
- kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom!They demanded the immidiate end of the new Berlin to Baghdad Railway project.United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering.While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen.
+ kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom!They demanded the immidiate end of the new Berlin to Baghdad Railway project.United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering.While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen."
  kis_news.124.a: "It is just a railway" 

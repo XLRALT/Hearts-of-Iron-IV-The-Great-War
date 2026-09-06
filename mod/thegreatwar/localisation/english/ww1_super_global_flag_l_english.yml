@@ -44,6 +44,9 @@
  usa_zimmermann_telegram: "The Zimmerman Telegram"
  SUPER_GLOBAL_Adios_Francisco_Madero_1913: "Military Coup in Mexico"
  
+ #Berlin Baghdad Railway
+ BB_railway_canceled_gflg: "Berlin Baghdad Railway has been cancelled"
+ 
  # INTERWAR
  interwar_wall_street_crash_1929: "Wall Street Crash happened"
  global_RomanovFamilyExecuted: "The Romanov family has been executed"
