@@ -45,7 +45,6 @@ ideas = {
 			rheinmetall={ allowed={ TAG=GER } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } }
 			}
 	industrial_concern = {
-			designer = yes
 			krupp={ allowed={ TAG=GER }    research_bonus = {
 							    industry = 0.10
 
