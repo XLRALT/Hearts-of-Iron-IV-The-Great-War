@@ -350,16 +350,10 @@ ideas = {
 	
 		Ziraat_bank = {
 		
-		    designer = yes
-		
 			picture = PRC_nanjing_wireless_electronics_plant
 
 			allowed = {
 				tag = TUR
-			}
-
-			visible = {
-			    always = yes
 			}
 
 			available = { 
@@ -378,28 +372,6 @@ ideas = {
 				consumer_goods_factor = -0.2 
 			}
 
-		}
-		
-		tcdd = {
-				
-			picture = tur_tcdd
-		
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = { 
-				TUR_debt_council_has_no_sway = yes
-				has_completed_focus = TUR_turkish_state_railways
-			}	
-
-			cost = 75			
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { linchpin_of_infrastructure }
 		}
 	}
 	naval_manufacturer = {

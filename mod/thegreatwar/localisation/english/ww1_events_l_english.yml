@@ -1504,6 +1504,9 @@
  kis_news.123.t: "End of the Xinhai Revolution"
  kis_news.123.d: "The civil war in China has ended. The Tongmenghui has fallen, and the Qing has affirmed its legitimacy. This solidifes the interest of Western powers in China."
  kis_news.123.a: "Thank god, the tea is safe!"
+ kis_news.124.t: "Berlin Baghdad Railway Crisis"
+ kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom!They demanded the immidiate end of the new Berlin to Baghdad Railway project.United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering.While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen."
+ kis_news.124.a: "It is just a railway"
  # First Balkan War
  ww1_firstbalkan.3.t: "Join the Balkan League"
  ww1_firstbalkan.3.d: "Serbia is forming the Balkan League and asks us if we'd like to join them.\n\nShould we accept?"
@@ -1772,7 +1775,3 @@
  ww1_ottoman.30.t: "Mass Minority Protests"
  ww1_ottoman.30.d: "With our recent centralization efforts taking place most of our eyalets containing majority arab,kurd and armenian subjects protested the governments decision.While they are little scale rebellions but this means further centralization can lead to a big minority uprising."
  ww1_ottoman.30.a: "A few rebellions can be disregarded."
- #Berlin Baghdad Railway Crisis
- kis_news.124.t: "Berlin Baghdad Railway Crisis"
- kis_news.124.d: "Today a delegation from United Kingdom came to Germany with harsh letters and a ultimatom!They demanded the immidiate end of the new Berlin to Baghdad Railway project.United Kingdom said this project is going to erase British influence in the Middle East while Germans and the Ottomans accused Britian for warmongering.While a scenerio between Britain and Germany going to war is uncertain only time will tell what is going to happen."
- kis_news.124.a: "It is just a railway" 

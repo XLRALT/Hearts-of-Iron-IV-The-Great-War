@@ -2479,7 +2479,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -2981,7 +2981,7 @@ focus_tree = {
 						is_coastal = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3013,7 +3013,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						dockyard > 0
 						free_building_slots = {
@@ -3580,14 +3580,14 @@ focus_tree = {
 		}
 		icon = GFX_focus_CHI_planned_economy
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -3617,14 +3617,14 @@ focus_tree = {
 		}
 		icon = GFX_focus_SOV_merge_plants
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -3653,7 +3653,7 @@ focus_tree = {
 		}
 		icon = GFX_SOV_funds_for_the_cause_ccp_2d_sov_compatibility
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -3841,14 +3841,14 @@ focus_tree = {
 		}
 		icon = GFX_focus_CHI_registry_of_property
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -4165,7 +4165,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    random_owned_state = {
+		    random_owned_controlled_state = {
 		    	add_extra_state_shared_building_slots = 1
 		    	add_building_construction = {
 		    		type = arms_factory
@@ -4173,7 +4173,7 @@ focus_tree = {
 		    		instant_build = yes
 		    	}
 		    }
-		    random_owned_state = {
+		    random_owned_controlled_state = {
 		    	add_extra_state_shared_building_slots = 1
 		    	add_building_construction = {
 		    		type = arms_factory
@@ -4349,7 +4349,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		    random_owned_state = {
+		    random_owned_controlled_state = {
 		    	add_extra_state_shared_building_slots = 1
 		    	add_building_construction = {
 		    		type = industrial_complex
@@ -4357,7 +4357,7 @@ focus_tree = {
 		    		instant_build = yes
 		    	}
 		    }
-		    random_owned_state = {
+		    random_owned_controlled_state = {
 		    	add_extra_state_shared_building_slots = 1
 		    	add_building_construction = {
 		    		type = arms_factory
@@ -4553,6 +4553,7 @@ focus_tree = {
 			build_railway = {
 				path = { 904 11866 11883 979 3982 3967 6995 }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 		ai_will_do = {
 			factor = 10
