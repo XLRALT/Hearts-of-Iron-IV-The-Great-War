@@ -3637,7 +3637,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = -3
@@ -3663,7 +3663,7 @@ focus_tree = {
 			unlock_decision_tooltip = TUR_large_debt_payment
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 5
 		x = -4
@@ -3739,7 +3739,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = -2
@@ -3783,7 +3783,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 0
+		cost = 5
 		x = -2
 		y = 4
 	}
@@ -3825,7 +3825,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 0
+		cost = 5
 		x = -2
 		y = 5
 	}
@@ -3860,7 +3860,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 0
+		cost = 5
 		x = -4
 		y = 3
 	}
@@ -3879,7 +3879,7 @@ focus_tree = {
 		completion_reward = {
 		    add_popularity = {
 			    ideology = communism
-				popularity = 0.1
+				popularity = 0.05
 			}
 			341 = {
 				add_building_construction = {
@@ -3906,7 +3906,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-		cost = 0
+		cost = 5
 		x = -4
 		y = 4
 	}
@@ -4037,7 +4037,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		cost = 10
 		x = 2
@@ -4073,7 +4073,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		cost = 10
 		x = 2
@@ -4140,7 +4140,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 5
 		x = 3
@@ -4187,9 +4187,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 7
+		cost = 5
 		x = 2
 		y = 5
 	}
@@ -4234,7 +4234,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		cost = 15
+		cost = 5
 		x = 4
 		y = 3
 	}
@@ -4291,7 +4291,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		cost = 10
 		x = 4
@@ -4332,7 +4332,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 10
 		x = 4
@@ -4367,7 +4367,7 @@ focus_tree = {
 		    }
 		}
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		cost = 10
 		x = 0
@@ -4413,7 +4413,7 @@ focus_tree = {
 		    }
 		}
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		cost = 10
 		x = 0
@@ -4459,7 +4459,7 @@ focus_tree = {
 		    }
 		}
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		cost = 10
 		x = 0
@@ -4481,7 +4481,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		cost = 10
 		x = 0
@@ -4512,9 +4512,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 7
+		cost = 5
 		x = 1
 		y = 6
 	}
@@ -4555,9 +4555,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
-		cost = 7
+		cost = 5
 		x = -1
 		y = 6
 	}
@@ -4597,7 +4597,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		cost = 7
 		x = 0
