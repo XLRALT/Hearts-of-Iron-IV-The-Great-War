@@ -53,6 +53,39 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
+
+		prohibition_accepted = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1 
+			modifier = {
+				consumer_goods_factor = -0.1 #Decreased demand as alcohol consumption "declines"
+				political_power_cost = 0.5 #That was a big change, new ones become extra expensive
+			}
+		}
+		prohibition_rejected = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1 
+			modifier = {
+				stability_weekly = -0.001 #Regular decline as women cause problems
+				consumer_goods_factor = 0.1 #Increased demand to account for miserable public
+			}
+		}
+		bootleggers = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1 
+			modifier = {
+				stability_weekly = -0.001 #Regular decline due to intense violence
+				consumer_goods_factor = 0.05 #Increased demand for consumer goods as bootleggers fill the void for liqour
+				political_power_cost = 0.5 #Corruption
+				
+			}
+		}
 		
 		great_depression={ allowed={ always=no } allowed_civil_war={ has_government=democratic } removal_cost=-1 modifier={ political_power_cost=1 consumer_goods_factor=0.3 conscription_factor=-0.5 } }
 		new_deal={ allowed={ always=no } allowed_civil_war={ has_government=democratic } removal_cost=-1 modifier={ production_speed_infrastructure_factor=0.2 stability_factor =0.10 } }
