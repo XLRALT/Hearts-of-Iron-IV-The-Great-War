@@ -22,14 +22,6 @@ if = {
 		target = JBS
 		autonomous_state = autonomy_dominion
 	}
-	set_autonomy = {
-		target = ASR
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = YEM
-		autonomous_state = autonomy_integrated_puppet
-	}
 }
 
 #-------------------------------------------------------
